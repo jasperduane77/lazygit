@@ -99,10 +99,10 @@ github.com/hashicorp/hcl/json/token
 github.com/integrii/flaggy
 # github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99
 github.com/jbenet/go-context/io
-# github.com/jesseduffield/gocui v0.3.1-0.20200309001002-7765949e1c8a
+# github.com/jesseduffield/gocui v0.3.1-0.20200405034337-066b5b6ca1ba
 ## explicit
 github.com/jesseduffield/gocui
-# github.com/jesseduffield/termbox-go v0.0.0-20200130214842-1d31d1faa3c9
+# github.com/jesseduffield/termbox-go v0.0.0-20200405031649-4dc645f7e8ba
 ## explicit
 github.com/jesseduffield/termbox-go
 # github.com/kardianos/osext v0.0.0-20190222173326-2bc1f35cddc0
@@ -121,7 +121,7 @@ github.com/mattn/go-colorable
 # github.com/mattn/go-isatty v0.0.11
 ## explicit
 github.com/mattn/go-isatty
-# github.com/mattn/go-runewidth v0.0.8
+# github.com/mattn/go-runewidth v0.0.9
 ## explicit
 github.com/mattn/go-runewidth
 # github.com/mgutz/str v1.2.0
@@ -150,7 +150,7 @@ github.com/sergi/go-diff/diffmatchpatch
 # github.com/shibukawa/configdir v0.0.0-20170330084843-e180dbdc8da0
 ## explicit
 github.com/shibukawa/configdir
-# github.com/sirupsen/logrus v1.4.2
+# github.com/sirupsen/logrus v1.5.0
 ## explicit
 github.com/sirupsen/logrus
 # github.com/spf13/afero v1.2.2
@@ -204,7 +204,8 @@ golang.org/x/crypto/ssh/knownhosts
 golang.org/x/net/context
 golang.org/x/net/internal/socks
 golang.org/x/net/proxy
-# golang.org/x/sys v0.0.0-20200302150141-5c8b2ff67527
+# golang.org/x/sys v0.0.0-20200331124033-c3d80250170d
+## explicit
 golang.org/x/sys/cpu
 golang.org/x/sys/unix
 golang.org/x/sys/windows
