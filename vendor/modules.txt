@@ -19,7 +19,7 @@ github.com/fatih/color
 # github.com/fsnotify/fsnotify v1.4.7
 ## explicit
 github.com/fsnotify/fsnotify
-# github.com/go-errors/errors v1.0.1
+# github.com/go-errors/errors v1.0.2
 ## explicit
 github.com/go-errors/errors
 # github.com/go-git/gcfg v1.5.0
@@ -99,7 +99,7 @@ github.com/hashicorp/hcl/json/token
 github.com/integrii/flaggy
 # github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99
 github.com/jbenet/go-context/io
-# github.com/jesseduffield/gocui v0.3.1-0.20200405034337-066b5b6ca1ba
+# github.com/jesseduffield/gocui v0.3.1-0.20200415100931-3c4f0994aca5
 ## explicit
 github.com/jesseduffield/gocui
 # github.com/jesseduffield/termbox-go v0.0.0-20200405031649-4dc645f7e8ba
@@ -204,7 +204,7 @@ golang.org/x/crypto/ssh/knownhosts
 golang.org/x/net/context
 golang.org/x/net/internal/socks
 golang.org/x/net/proxy
-# golang.org/x/sys v0.0.0-20200331124033-c3d80250170d
+# golang.org/x/sys v0.0.0-20200413165638-669c56c373c4
 ## explicit
 golang.org/x/sys/cpu
 golang.org/x/sys/unix

@@ -147,6 +147,8 @@ type View struct {
 
 	// IgnoreClickPosition determines whether we set the cursor upon clicking a view
 	IgnoreClickPosition bool
+
+	Visible bool
 }
 
 type searcher struct {
@@ -315,6 +317,7 @@ func newView(name string, x0, y0, x1, y1 int, mode OutputMode, log *logrus.Entry
 		log:          log,
 		topMargin:    1,
 		bottomMargin: y1 - y0, // TODO: this might be off by one
+		Visible:      true,
 	}
 	return v
 }
@@ -535,6 +538,8 @@ func (v *View) Write(p []byte) (n int, err error) {
 			}
 			v.wcx = 0
 
+			v.ei.reset()
+
 			sanityCheck()
 		default:
 
@@ -728,11 +733,6 @@ func (v *View) Write(p []byte) (n int, err error) {
 				}
 			}
 			sanityCheck()
-
-			_, height := v.Size()
-			if v.Pty && v.wcy >= height {
-				v.Autoscroll = true
-			}
 		}
 	}
 
@@ -1208,7 +1208,9 @@ func (v *View) SelectedLineIdx() int {
 }
 
 func (v *View) SelectedPoint() (int, int) {
+	// TODO: I feel like we should have to involve the origin here but it seems
+	// like the meaning of the cursor has changed from being the position relative to the origin
+	// vs the absolute position in terms of the view's content. Will need to check ramifications of this
 	cx, cy := v.Cursor()
-	ox, oy := v.Origin()
-	return cx + ox, cy + oy
+	return cx, cy
 }
