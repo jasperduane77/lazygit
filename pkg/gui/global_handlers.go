@@ -152,7 +152,7 @@ func (gui *Gui) handleInfoClick(g *gocui.Gui, v *gocui.View) error {
 		}
 	}
 
-	if cx <= len(gui.Tr.SLocalize("Donate")) {
+	if cx <= len(gui.Tr.SLocalize("Donate"))+len(INFO_SECTION_PADDING) {
 		return gui.OSCommand.OpenLink("https://github.com/sponsors/jesseduffield")
 	}
 	return nil
